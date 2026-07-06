@@ -1,4 +1,4 @@
-import DashboardLayout from "../components/dashboard/DashboardLayout";
+import DashboardLayout from "../components/Dashboard/DashboardLayout";
 import PeopleContent from "../components/people/PeopleContent";
 
 export default function People() {
