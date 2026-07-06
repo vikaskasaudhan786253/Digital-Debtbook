@@ -27,8 +27,10 @@ export default function EditPersonModal({
         try {
             const token = localStorage.getItem("token");
 
+            const API_URL = import.meta.env.VITE_API_URL;
+
             const response = await fetch(
-                `http://127.0.0.1:5000/people/${person.id}`,
+                `${API_URL}/people/${person.id}`,
                 {
                     method: "PUT",
                     headers: {
