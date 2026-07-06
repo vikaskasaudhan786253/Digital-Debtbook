@@ -34,7 +34,7 @@ export default function NewTransactionModal({
             const token = localStorage.getItem("token");
 
             const response = await fetch(
-                "http://127.0.0.1:5000/transactions",
+                "https://digital-debtbook.onrender.com/transactions",
                 {
                     method: "POST",
                     headers: {
