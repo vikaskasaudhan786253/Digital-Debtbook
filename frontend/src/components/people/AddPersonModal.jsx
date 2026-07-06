@@ -16,9 +16,8 @@ export default function AddPersonModal({ open,
     try {
         const token = localStorage.getItem("token");
 
-        const API_URL = import.meta.env.VITE_API_URL;
 
-        const response = await fetch(`${API_URL}/people`, {
+        const response = await fetch("https://digital-debtbook.onrender.com/people", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
