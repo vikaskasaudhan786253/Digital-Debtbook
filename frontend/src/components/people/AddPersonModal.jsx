@@ -16,7 +16,9 @@ export default function AddPersonModal({ open,
     try {
         const token = localStorage.getItem("token");
 
-        const response = await fetch("http://127.0.0.1:5000/people", {
+        const API_URL = import.meta.env.VITE_API_URL;
+
+        const response = await fetch(`${API_URL}/people`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
