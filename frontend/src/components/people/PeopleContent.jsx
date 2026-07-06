@@ -21,10 +21,8 @@ export default function PeopleContent() {
     const [selectedPerson, setSelectedPerson] = useState(null);
 
     const fetchPeople = async () => {
-
-        const API_URL = import.meta.env.VITE_API_URL;
     const response = await fetch(
-        `${API_URL}/people?user_id=1`
+        `https://digital-debtbook.onrender.com/people?user_id=1`
     );
 
     const data = await response.json();
@@ -52,7 +50,7 @@ useEffect(() => {
     if (!window.confirm("Delete this person?"))
         return;
 
-    await fetch(`http://127.0.0.1:5000/people/${id}`, {
+    await fetch(`https://digital-debtbook.onrender.com/people/${id}`, {
         method: "DELETE",
     });
 
