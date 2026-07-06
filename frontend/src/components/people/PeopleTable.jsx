@@ -42,7 +42,7 @@ export default function PeopleTable({
     try {
 
     const response = await fetch(
-    `http://127.0.0.1:5000/people/${person.id}`,
+    `https://digital-debtbook.onrender.com/people/${person.id}`,
     {
         method: "DELETE"
     }
