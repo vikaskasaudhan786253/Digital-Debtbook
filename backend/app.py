@@ -41,7 +41,14 @@ from flask_cors import CORS
 
 CORS(
     app,
-    resources={r"/*": {"origins": "http://localhost:5173"}},
+    resources={
+        r"/*": {
+            "origins": [
+                "http://localhost:5173",
+                "https://digital-debtbook.vercel.app"
+            ]
+        }
+    },
     supports_credentials=True,
     methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allow_headers=["Content-Type", "Authorization"]
