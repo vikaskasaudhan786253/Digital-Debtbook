@@ -27,7 +27,7 @@ const [selectedTransaction, setSelectedTransaction] = useState(null);
         const fetchTransactions = async () => {
 
     const response = await fetch(
-        "http://127.0.0.1:5000/transactions?user_id=1"
+        "https://digital-debtbook.onrender.com/transactions?user_id=1"
     );
 
     const data = await response.json();
@@ -73,7 +73,7 @@ const [selectedTransaction, setSelectedTransaction] = useState(null);
 const fetchPeople = async () => {
 
     const response = await fetch(
-        "http://127.0.0.1:5000/people?user_id=1"
+        "https://digital-debtbook.onrender.com/people?user_id=1"
     );
 
     const data = await response.json();
@@ -99,7 +99,7 @@ const deleteTransaction = async (id) => {
 
         const response = await fetch(
 
-            `http://127.0.0.1:5000/transactions/${id}`,
+            `https://digital-debtbook.onrender.com/transactions/${id}`,
 
             {
                 method: "DELETE",
