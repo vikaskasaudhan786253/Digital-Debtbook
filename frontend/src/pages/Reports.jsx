@@ -128,7 +128,7 @@
 
 // }
 
-import DashboardLayout from "../components/dashboard/DashboardLayout";
+import DashboardLayout from "../components/Dashboard/DashboardLayout";
 import ReportsContent from "../components/reports/ReportsContent";
 
 export default function Reports() {
