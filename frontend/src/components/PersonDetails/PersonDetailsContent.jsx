@@ -33,7 +33,7 @@ export default function PersonDetailsContent() {
     const fetchPerson = async () => {
 
        const response = await fetch(
-    `http://127.0.0.1:5000/people/${id}`
+    `https://digital-debtbook.onrender.com/people/${id}`
         );
 
         if (!response.ok) {
@@ -53,7 +53,7 @@ export default function PersonDetailsContent() {
     const fetchTransactions = async () => {
 
         const response = await fetch(
-            `http://127.0.0.1:5000/people/${id}/transactions`
+            `https://digital-debtbook.onrender.com/people/${id}/transactions`
         );
 
        const data = await response.json();
